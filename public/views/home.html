@@ -1,0 +1,19 @@
+<div class="hero" ng-style="heroImage">
+  <div class="container">
+    <h1 class="text-center">What's The Weather</h1>
+
+    <div class="form-group">
+      <label>Where do you live?</label>
+      <input type="text" class="form-control" ng-model="location">
+    </div>
+
+    <button class="btn btn-primary center-block" ng-click="getWeather()">Get Weather</button>
+
+    <div class="results" ng-show="resultsPresent">
+      <p>The current temperature is: <strong>{{ temp }}&#176</strong> </p>
+      <p>The forcast for today is: <strong>{{ forecast }}</strong> </p>
+
+      <div id="map"></div>
+    </div>
+  </div>
+</div>

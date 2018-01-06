@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Angular CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+
+    <!-- Angular UI Router CDN 0.4.2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+</head>
+<body>
+
+  <div ui-view></div>
+
+  <!-- Module -->
+  <script type="text/javascript" src="./app.js"></script>
+
+  <!-- Services -->
+  <script src="./services/weatherService.js"></script>
+
+  <!-- Controllers -->
+  <script type="text/javascript" src="./controllers/weatherController.js"></script>
+  
+  <!-- map -->
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt2svaTbP_7NtHqoLDJ4J2Dq2B5x0UdMo">
+  </script>
+</body>
+</html>
