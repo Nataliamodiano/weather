@@ -15,4 +15,4 @@ Built using:
 - Node
 - Express 
 
-![HomepageScreenshot](public/img/weatherApp.png)
+![HomepageScreenshot](public/img/weatherApp.PNG)
